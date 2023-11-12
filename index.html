@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Sort Visualization</title>
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Визуализация сортировки массивов</h1>
+    <div>
+      <div>
+          <label for="array">Введите массив через запятую:</label>
+          <input type="text" id="array" value="5,3,8,4,2,7,1,6" />
+      </div>
+      <div>
+        <label for="algorithm">Выберите алгоритм сортировки:</label>
+          <select id="algorithm">
+              <option value="quickSort">Быстрая сортировка</option>
+              <option value="bubbleSort">Сотртировка пузырьком</option>
+              <option value="selectionSort">Сортировка выбором</option>
+              <option value="insertionSort">Сортировка вставки</option>
+              <option value="heapSort">Сортировка кучи</option>
+          </select>
+      </div>  
+      <div>
+          <button id="startSort">Начать</button>
+          <button id="pauseResumeSort">Пауза</button>
+          <button id="stopSort">Завершить</button>
+      </div>
+      <div id="container"></div>
+    </div>
+  </div>
+  <script src="./src/js/sortMethods.js"></script>
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
